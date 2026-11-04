@@ -1,102 +1,108 @@
-
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Under Construction</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: #0d0d0f;
-            color: #f5f5f5;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 24px;
-        }
-
-        .container {
-            max-width: 520px;
-        }
-
-        .logo {
-            font-size: 14px;
-            font-weight: 700;
-            letter-spacing: 4px;
-            text-transform: uppercase;
-            margin-bottom: 60px;
-            color: #888;
-        }
-
-        h1 {
-            font-size: clamp(36px, 8vw, 58px);
-            letter-spacing: -2px;
-            margin-bottom: 20px;
-        }
-
-        p {
-            color: #888;
-            font-size: 16px;
-            line-height: 1.7;
-        }
-
-        .status {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            margin-top: 32px;
-            padding: 10px 16px;
-            border: 1px solid #29292e;
-            border-radius: 30px;
-            color: #aaa;
-            font-size: 12px;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-        }
-
-        .dot {
-            width: 7px;
-            height: 7px;
-            border-radius: 50%;
-            background: #4c3cff;
-            box-shadow: 0 0 10px #4c3cff;
-        }
-
-        footer {
-            position: absolute;
-            bottom: 28px;
-            color: #444;
-            font-size: 12px;
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NomberFax — поддержать автора</title>
+<meta name="description" content="Поддержать NomberFax: Boosty, DonationAlerts, Donatty и криптовалюта в 85+ сетях.">
+<link rel="canonical" href="https://donatre.github.io/">
+<link rel="alternate" hreflang="ru" href="https://donatre.github.io/?lang=ru">
+<link rel="alternate" hreflang="en" href="https://donatre.github.io/?lang=en">
+<link rel="alternate" hreflang="x-default" href="https://donatre.github.io/">
+<meta property="og:url" content="https://donatre.github.io/">
+<meta property="og:title" content="NomberFax — поддержать автора">
+<meta property="og:description" content="Независимый разработчик и автор контента. Донаты картой и криптой.">
+<meta property="og:image" content="https://donatre.github.io/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://donatre.github.io/img/og.jpg">
+<meta name="theme-color" content="#0b0b14">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="css/style.css">
+<script>/* ранний выбор языка, чтобы не мигал текст */(function(){try{var p=new URLSearchParams(location.search).get('lang'),s=localStorage.getItem('lang'),l=p||s;if(l!=='ru'&&l!=='en'){var L=navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||'en'];l=/^(ru|uk|be|kk|ky|uz|tg|tk|hy|az|ka)/i.test(L[0]||'')?'ru':'en'}}catch(e){l='ru'}document.documentElement.lang=l})()</script>
 </head>
 <body>
-    <main class="container">
-        <div class="logo">Nomber Projects</div>
+<div class="bg" aria-hidden="true"><span></span><span></span><span></span></div>
+<main class="wrap">
+ <div class="langsw" role="group" aria-label="Language"><button type="button" data-lang="ru">RU</button><button type="button" data-lang="en">EN</button></div>
+ <header class="hero reveal">
+  <div class="ava"><img src="img/avatar.webp" data-i18n-alt="avaAlt" alt="Аватар NomberFax" width="112" height="112"></div>
+  <h1>Nomber<span>Fax</span></h1>
+  <p class="tag" data-i18n="tag">NomberProjects · независимый разработчик и автор контента</p>
+  <p class="bio" data-i18n="bio">Делаю open-source проекты, полезные инструменты и творческие эксперименты. Ваша поддержка даёт мне больше времени на разработку, поддержку существующих проектов и новые идеи.</p>
+  <p class="bio bio-thanks" data-i18n="bioT">Спасибо, что вы со мной! ❤️</p>
+  <nav class="social" data-i18n-aria="linksAria" aria-label="Ссылки">
+   <a href="https://t.me/Nomboerto" target="_blank" rel="noopener">Telegram</a>
+   <a href="https://github.com/NOMBER" target="_blank" rel="noopener">GitHub</a>
+   <a href="https://nomberprojects.github.io" target="_blank" rel="noopener" data-i18n="portfolio">Портфолио</a>
+   <a href="https://downgrab.github.io" target="_blank" rel="noopener">DownGrab</a>
+  </nav>
+ </header>
 
-        <h1>Something is<br>in the works.</h1>
+ <section aria-labelledby="h-cards">
+  <h2 id="h-cards" class="sec reveal"><i>01</i> <span data-i18n="hCards">Донат картой</span></h2>
+  <div class="plats">
+   <a class="plat boosty reveal" href="https://boosty.to/nomberfaxi" target="_blank" rel="noopener">
+    <b class="badge" data-i18n="bSub">Подписка</b>
+    <h3>Boosty</h3>
+    <p data-i18n-html="boostyP">Платформа поддержки авторов. Можно оформить <strong>ежемесячную подписку</strong> и поддерживать регулярно, либо отправить разовый донат.</p>
+    <p class="note" data-i18n="boostyN">Принимаются Visa / Mastercard и другие банковские карты.</p>
+    <span class="go" data-i18n="boostyGo">Поддержать на Boosty →</span>
+   </a>
+   <a class="plat da reveal" href="https://www.donationalerts.com/r/nomber_fax" target="_blank" rel="noopener">
+    <b class="badge" data-i18n="bOnce">Разово</b>
+    <h3>DonationAlerts</h3>
+    <p data-i18n="daP">Разовый донат с сообщением — картой или другим удобным способом.</p>
+    <p class="note" data-i18n="daN">Принимаются Visa / Mastercard и другие карты.</p>
+    <span class="go" data-i18n="daGo">Отправить донат →</span>
+   </a>
+   <a class="plat donatty reveal" href="https://donatty.com/nomber" target="_blank" rel="noopener">
+    <b class="badge" data-i18n="bOnce">Разово</b>
+    <h3>Donatty</h3>
+    <p data-i18n="dtP">Быстрый разовый донат с сообщением, без регистрации.</p>
+    <p class="note" data-i18n="dtN">Оплата картой и другими способами — доступные варианты видны на странице доната.</p>
+    <span class="go" data-i18n="dtGo">Задонатить →</span>
+   </a>
+  </div>
+ </section>
 
-        <p>
-            We're building something new.
-            This website is currently under development.
-            Stay tuned for updates.
-        </p>
+ <section aria-labelledby="h-crypto">
+  <h2 id="h-crypto" class="sec reveal"><i>02</i> <span data-i18n="hCrypto">Криптовалюта</span></h2>
+  <div id="main-coins" class="coins"></div>
 
-        <div class="status">
-            <span class="dot"></span>
-            Under Development
-        </div>
-    </main>
+  <label class="search searchtop"><span class="sr" data-i18n="searchLbl">Поиск по сетям</span>
+    <input id="q" type="search" data-i18n-ph="ph" placeholder="Поиск: сеть, тикер, chain id…" autocomplete="off" spellcheck="false"></label>
+  <button id="toggle" type="button" class="toggle" aria-expanded="false" aria-controls="all"><span id="tgl" data-i18n="show">Показать все сети</span> <span id="cnt" class="cnt"></span></button>
+  <div id="all" class="all" hidden>
+   <p class="hint" data-i18n="hint">Выберите сеть и скопируйте адрес. Отправляйте только в той сети, которая указана в строке.</p>
+   <p id="res" class="res" aria-live="polite"></p>
+   <ul id="list" class="list"></ul>
+   <p id="empty" class="empty" hidden data-i18n="empty">Ничего не найдено — попробуйте название или тикер</p>
+  </div>
+ </section>
 
-    <footer>© 2026 Nomber Projects</footer>
+ <section class="other reveal" aria-labelledby="h-other">
+  <h2 id="h-other" class="sec"><i>03</i> <span data-i18n="hOther">Другие способы</span></h2>
+  <a class="mini" href="https://steamcommunity.com/id/NomberFax/" target="_blank" rel="noopener">
+   <span class="mi" aria-hidden="true">🎮</span>
+   <span><b>Steam</b><small data-i18n="steamP">Можно отправить скины или подарить игру</small></span>
+   <span class="go2" data-i18n="steamGo">Профиль →</span>
+  </a>
+ </section>
+
+ <footer><span data-i18n="thanks">Спасибо за поддержку!</span> · <a href="https://nomberprojects.github.io" target="_blank" rel="noopener">NomberProjects</a></footer>
+</main>
+
+<dialog id="qrdlg" aria-labelledby="qrt">
+ <h3 id="qrt"></h3><img id="qri" data-i18n-alt="qrAlt" alt="QR-код адреса" width="240" height="240"><code id="qra"></code>
+ <div class="dlgb"><button type="button" class="btn" id="qrc" data-i18n="copy">Копировать</button><button type="button" class="btn ghost" id="qrx" data-i18n="close">Закрыть</button></div>
+</dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="data/networks.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>
